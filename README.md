@@ -1,4 +1,4 @@
-    ros-sandbox
+ros-sandbox
 ===========
 
 This is a place to practice [ROS](http://www.ros.org) where you will submit your assignments and practice problems.
