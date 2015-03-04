@@ -28,7 +28,6 @@ int main(int argc, char **argv)
     ss << count;
     msg.data = ss.str();
 
-    ROS_INFO("%s", msg.data.c_str());
 
     
     chatter_pub.publish(msg);

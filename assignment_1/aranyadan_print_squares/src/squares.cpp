@@ -18,21 +18,25 @@ int main(int argc, char **argv)
   
   ros::Subscriber sub = n.subscribe("topic_numbers", 1000, chatterCallback);
 
-  std_msgs::String msg;
+  ros::Rate loop_rate(1);
+  while(ros::ok())
+  {
+    std_msgs::String msg;
 
-  std::stringstream ss;
-  ss << x;
-  msg.data = ss.str();
-  chatter_pub2.publish(msg);
+    std::stringstream ss;
+    ss << x;
+    msg.data = ss.str();
+    chatter_pub2.publish(msg);
+    ros::spinOnce();
+    loop_rate.sleep();
+
+  }  
   ros::spin();
 
   return 0;
 }
 void chatterCallback(const std_msgs::String::ConstPtr& msg2)
 {
-  ROS_INFO("I heard: [%s]", msg2->data.c_str());
   int a= atoi(msg2 ->data.c_str());
   x=a*a;
-  
-
 }
