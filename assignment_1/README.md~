@@ -19,6 +19,10 @@ Create a catkin package `<github-username>_print_squares` which contains three n
 * Once you are done with the development, place this catkin-package inside `<this-repo-root>/assignment_1/` and send a pull request.
 
 ### Final Submissions for this assignment
+<<<<<<< HEAD
+- Pull Request to `quadrotor-IITKgp/ros-sandbox` containing the package `<this-repo-root>/assignment_1/username_print_squares/`
+=======
 - Pull Request to `auviitkgp/ros-sandbox` containin the package `<this-repo-root>/assignment_1/username_print_squares/`
+>>>>>>> 3586068d1cd5bebe863f65b8b8158497c22335a3
 - GitHub Repo: `github.com/username/username_print_squares`
 
