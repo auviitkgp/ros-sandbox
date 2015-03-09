@@ -29,7 +29,7 @@ using namespace ros;
 
   int main(int argc,char **argv)
   {
-  	init(argc, argv, "print");
+  	init(argc, argv, "print_chatrasen");
   	NodeHandle s1, s2;                   //two nodes for subscription are created
 	Rate loop_rate(1);
   	Subscriber sub1 = s1.subscribe("topic_numbers", 1000, Callback1);

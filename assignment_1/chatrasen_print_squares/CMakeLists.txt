@@ -81,7 +81,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES chatrasen_print_squares
+#  LIBRARIES chatrasen_print_chatrasen_squares
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -98,19 +98,19 @@ include_directories(
 )
 
 ## Declare a cpp library
-# add_library(chatrasen_print_squares
-#   src/${PROJECT_NAME}/chatrasen_print_squares.cpp
+# add_library(chatrasen_print_chatrasen_squares
+#   src/${PROJECT_NAME}/chatrasen_print_chatrasen_squares.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(chatrasen_print_squares_node src/chatrasen_print_squares_node.cpp)
+# add_executable(chatrasen_print_chatrasen_squares_node src/chatrasen_print_chatrasen_squares_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(chatrasen_print_squares_node chatrasen_print_squares_generate_messages_cpp)
+# add_dependencies(chatrasen_print_chatrasen_squares_node chatrasen_print_chatrasen_squares_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(chatrasen_print_squares_node
+# target_link_libraries(chatrasen_print_chatrasen_squares_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -129,7 +129,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS chatrasen_print_squares chatrasen_print_squares_node
+# install(TARGETS chatrasen_print_chatrasen_squares chatrasen_print_chatrasen_squares_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -154,7 +154,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_chatrasen_print_squares.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_chatrasen_print_chatrasen_squares.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
@@ -163,12 +163,12 @@ include_directories(
 # catkin_add_nosetests(test)
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(numbers src/numbers.cpp)
-target_link_libraries(numbers ${catkin_LIBRARIES})
+add_executable(numbers_chatrasen src/numbers_chatrasen.cpp)
+target_link_libraries(numbers_chatrasen ${catkin_LIBRARIES})
 #add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
-add_executable(squares src/squares.cpp)
-target_link_libraries(squares ${catkin_LIBRARIES})
+add_executable(squares_chatrasen src/squares_chatrasen.cpp)
+target_link_libraries(squares_chatrasen ${catkin_LIBRARIES})
 #add_dependencies(listener beginner_tutorials_generate_messages_cpp)
-add_executable(print src/print.cpp)
-target_link_libraries(print ${catkin_LIBRARIES})
+add_executable(print_chatrasen src/print_chatrasen.cpp)
+target_link_libraries(print_chatrasen ${catkin_LIBRARIES})
