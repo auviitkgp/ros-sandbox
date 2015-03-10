@@ -163,14 +163,14 @@ include_directories(
 # catkin_add_nosetests(test)
 
 
-add_executable(numbers src/numbers.cpp)
-target_link_libraries(numbers ${catkin_LIBRARIES})
-add_dependencies(numbers manashraja_print_squares_generate_messages_cpp)
+add_executable(numbers_manashraja src/numbers_manashraja.cpp)
+target_link_libraries(numbers_manashraja ${catkin_LIBRARIES})
+add_dependencies(numbers_manashraja manashraja_print_squares_generate_messages_cpp)
 
-add_executable(squares src/squares.cpp)
-target_link_libraries(squares ${catkin_LIBRARIES})
-add_dependencies(squares manashraja_print_squares_generate_messages_cpp)
+add_executable(squares_manashraja src/squares_manashraja.cpp)
+target_link_libraries(squares_manashraja ${catkin_LIBRARIES})
+add_dependencies(squares_manashraja manashraja_print_squares_generate_messages_cpp)
 
-add_executable(print src/print.cpp)
-target_link_libraries(print ${catkin_LIBRARIES})
-add_dependencies(print manashraja_print_squares_generate_messages_cpp)
+add_executable(print_manashraja src/print_manashraja.cpp)
+target_link_libraries(print_manashraja ${catkin_LIBRARIES})
+add_dependencies(print_manashraja manashraja_print_squares_generate_messages_cpp)

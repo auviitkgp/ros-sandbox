@@ -28,7 +28,7 @@ private:
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "squares");
+  ros::init(argc, argv, "squares_manashraja");
   Square_Publish NewObject;
 
   ros::spin();

@@ -13,7 +13,7 @@ void squaresCallback(const std_msgs::Int32::ConstPtr& msg)
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "print");
+  ros::init(argc, argv, "print_manashraja");
   ros::NodeHandle n;  
   ros::Subscriber sub_numbers = n.subscribe("/topic_numbers", 100, numbersCallback); 
   ros::Subscriber sub_squares = n.subscribe("/topic_squares", 100, squaresCallback);   
