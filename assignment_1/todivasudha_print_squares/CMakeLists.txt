@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(shaswat27_print_squares)
+project(todivasudha_print_squares)
 
 if(POLICY CMP0002)
 	cmake_policy(SET CMP0002 OLD)
@@ -8,10 +8,10 @@ endif()
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
-  std_msgs
+find_package(catkin REQUIRED
+roscpp
+rospy
+std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -71,7 +71,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   std_msgs
+#   std_msgs  # Or other packages containing msgs
 # )
 
 ###################################
@@ -85,8 +85,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES shaswat27_print_squares
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+#  LIBRARIES todivasudha_print_squares
+#  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
 
@@ -97,24 +97,21 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
 
 ## Declare a cpp library
-# add_library(shaswat27_print_squares
-#   src/${PROJECT_NAME}/shaswat27_print_squares.cpp
+# add_library(todivasudha_print_squares
+#   src/${PROJECT_NAME}/todivasudha_print_squares.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(shaswat27_print_squares_node src/shaswat27_print_squares_node.cpp)
+# add_executable(todivasudha_print_squares_node src/todivasudha_print_squares_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(shaswat27_print_squares_node shaswat27_print_squares_generate_messages_cpp)
+# add_dependencies(todivasudha_print_squares_node todivasudha_print_squares_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(shaswat27_print_squares_node
+# target_link_libraries(todivasudha_print_squares_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -133,7 +130,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS shaswat27_print_squares shaswat27_print_squares_node
+# install(TARGETS todivasudha_print_squares todivasudha_print_squares_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -158,7 +155,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_shaswat27_print_squares.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_todivasudha_print_squares.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
@@ -166,17 +163,19 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+## Declare a catkin package
+catkin_package()
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(Numbers src/Numbers.cpp)
-target_link_libraries(Numbers ${catkin_LIBRARIES})
-add_dependencies(Numbers shaswat27_print_squares_generate_messages_cpp)
+add_executable(numbers src/numbers_todivasudha.cpp)
+target_link_libraries(numbers ${catkin_LIBRARIES})
+add_dependencies(numbers todivasudha_print_squares_generate_messages_cpp)
 
-add_executable(Squares src/Squares.cpp)
-target_link_libraries(Squares ${catkin_LIBRARIES})
-add_dependencies(Squares shaswat27_print_squares_generate_messages_cpp)
+add_executable(squares src/squares_todivasudha.cpp)
+target_link_libraries(squares ${catkin_LIBRARIES})
+add_dependencies(squares todivasudha_print_squares_generate_messages_cpp)
 
-add_executable(Print src/Print.cpp)
-target_link_libraries(Print ${catkin_LIBRARIES})
-add_dependencies(Print shaswat27_print_squares_generate_messages_cpp)
+add_executable(print src/print_todivasudha.cpp)
+target_link_libraries(print ${catkin_LIBRARIES})
+add_dependencies(print todivasudha_print_squares_generate_messages_cpp)
