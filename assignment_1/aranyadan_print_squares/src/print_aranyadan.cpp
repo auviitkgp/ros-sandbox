@@ -12,7 +12,7 @@ void chatterCallback2(const std_msgs::String::ConstPtr& msg)
 }
 int main(int argc, char **argv)
 {  
-  ros::init(argc, argv, "print");  
+  ros::init(argc, argv, "print_aranyadan");  
   ros::NodeHandle n;  
   ros::Subscriber sub = n.subscribe("topic_numbers", 1000, chatterCallback);
   ros::Subscriber sub2 = n.subscribe("topic_squares", 1000, chatterCallback2);  

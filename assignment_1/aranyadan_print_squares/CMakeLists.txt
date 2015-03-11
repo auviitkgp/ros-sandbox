@@ -17,14 +17,14 @@ catkin_package()
 ## Build talker and listener
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(numbers src/numbers.cpp)
-target_link_libraries(numbers ${catkin_LIBRARIES})
-add_dependencies(numbers aranyadan_print_squares_generate_messages_cpp)
+add_executable(numbers_aranyadan src/numbers_aranyadan.cpp)
+target_link_libraries(numbers_aranyadan ${catkin_LIBRARIES})
+add_dependencies(numbers_aranyadan aranyadan_print_squares_generate_messages_cpp)
 
-add_executable(squares src/squares.cpp)
-target_link_libraries(squares ${catkin_LIBRARIES})
-add_dependencies(squares aranyadan_print_squares_generate_messages_cpp)
+add_executable(squares_aranyadan src/squares_aranyadan.cpp)
+target_link_libraries(squares_aranyadan ${catkin_LIBRARIES})
+add_dependencies(squares_aranyadan aranyadan_print_squares_generate_messages_cpp)
 
-add_executable(print src/print.cpp)
-target_link_libraries(print ${catkin_LIBRARIES})
-add_dependencies(numbers aranyadan_print_squares_generate_messages_cpp)
+add_executable(print_aranyadan src/print_aranyadan.cpp)
+target_link_libraries(print_aranyadan ${catkin_LIBRARIES})
+add_dependencies(print_aranyadan aranyadan_print_squares_generate_messages_cpp)

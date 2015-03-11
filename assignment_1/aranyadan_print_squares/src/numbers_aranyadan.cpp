@@ -3,7 +3,7 @@
 #include <sstream>
 int main(int argc, char **argv)
 { 
-  ros::init(argc, argv, "numbers");  
+  ros::init(argc, argv, "numbers_aranyadan");  
   ros::NodeHandle n; 
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("topic_numbers", 1000);
   ros::Rate loop_rate(1); 

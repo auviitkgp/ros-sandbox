@@ -10,7 +10,7 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg2)
 }
 int main(int argc, char **argv)
 {  
-  ros::init(argc, argv, "squares");  
+  ros::init(argc, argv, "squares_arayadan");  
   ros::NodeHandle n;
   ros::Publisher chatter_pub2 = n.advertise<std_msgs::String>("topic_squares", 1000);
   ros::Subscriber sub = n.subscribe("topic_numbers", 1000, chatterCallback);
@@ -22,8 +22,9 @@ int main(int argc, char **argv)
     ss << x;
     msg.data = ss.str();
     chatter_pub2.publish(msg);
-    ros::spinOnce();
+    
     loop_rate.sleep();
+    ros::spinOnce();
   }  
   ros::spin();
   return 0;
