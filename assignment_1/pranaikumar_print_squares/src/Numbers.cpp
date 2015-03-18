@@ -4,7 +4,6 @@
 #include "std_msgs/String.h"
 #include <sstream>
 #include<stdlib.h>
-#include<time.h>
 int main(int argc, char **argv)
 {
   //initializing the node called number
@@ -16,13 +15,14 @@ int main(int argc, char **argv)
   ros::Publisher topic_numbers_pub = n1.advertise<std_msgs::Int64>("topic_numbers", 1000);
 
   ros::Rate loop_rate(1);
+
+  int num=1;
   while (ros::ok())
   {
     std_msgs::Int64 msg;
-    srand(time(NULL));
-    msg.data = rand() %1000;
+    msg.data =num;
 
-    ROS_INFO("%ld", msg.data);
+    ROS_INFO("%d", msg.data);
 
     // publishing on the topic_numbers
     topic_numbers_pub.publish(msg);
@@ -30,6 +30,8 @@ int main(int argc, char **argv)
     ros::spinOnce();
 
     loop_rate.sleep();
+
+    ++num;
 
     
   }
