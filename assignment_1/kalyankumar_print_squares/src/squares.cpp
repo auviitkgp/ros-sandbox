@@ -10,7 +10,7 @@ void chatterCallback(const std_msgs::Int64::ConstPtr &msg)
 	std_msgs::Int64 msg1;
 	msg1.data = i*i;
 	square_pub.publish(msg1);
-	ros::spinOnce();
+	ros::spin();
 }
 	
 
