@@ -12,6 +12,7 @@ int main(int argc, char **argv)
 		std_msgs::Int64 x1;
 		x1.data = y1;
 		chatter_pub.publish(x1);	//This publishes x1 onto the topic
+		ROS_INFO("topic_numbers - %ld\n", x1.data);
 		ros::spinOnce();
 		loop_rate.sleep();	//put to sleep for the remaining time
 	}
