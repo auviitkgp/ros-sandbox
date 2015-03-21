@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "print");     //Initializes ROS
 	ros::NodeHandle n;	//This creates a handle for this process' node
 	ros::Subscriber sub1 = n.subscribe("topic_numbers", 1000, chatterCallback1);	//Subscribes to the topic "topic_numbers" and calls callback function as a new message arrives
-	ros::Subscriber sub2 = n.subscribe("topic_squares", 1000, chatterCallback1);	//Subscribes to the topic "topic_squares" and calls callback function as a new message arrives
+	ros::Subscriber sub2 = n.subscribe("topic_squares", 1000, chatterCallback2);	//Subscribes to the topic "topic_squares" and calls callback function as a new message arrives
 	ros::spin();
 	return 0;
 }
