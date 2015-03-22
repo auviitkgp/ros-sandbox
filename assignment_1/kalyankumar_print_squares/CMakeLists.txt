@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(kalyankumar_print_squares)
 
+if(POLICY CMP0002)
+	cmake_policy(SET CMP0002 OLD)
+endif()
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
