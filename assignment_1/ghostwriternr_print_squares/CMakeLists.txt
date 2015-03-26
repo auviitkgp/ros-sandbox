@@ -152,14 +152,14 @@ include_directories(
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
 
-add_executable(numbers src/numbers.cpp)
-target_link_libraries(numbers ${catkin_LIBRARIES})
+add_executable(numbers_ghostwriternr src/numbers_ghostwriternr.cpp)
+target_link_libraries(numbers_ghostwriternr ${catkin_LIBRARIES})
 
-add_executable(squares src/squares.cpp)
-target_link_libraries(squares ${catkin_LIBRARIES})
+add_executable(squares_ghostwriternr src/squares_ghostwriternr.cpp)
+target_link_libraries(squares_ghostwriternr ${catkin_LIBRARIES})
 
-add_executable(print src/print.cpp)
-target_link_libraries(print ${catkin_LIBRARIES})
+add_executable(print_ghostwriternr src/print_ghostwriternr.cpp)
+target_link_libraries(print_ghostwriternr ${catkin_LIBRARIES})
 
 #############
 ## Testing ##
