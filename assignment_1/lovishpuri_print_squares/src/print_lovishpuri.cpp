@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 
   ros::Subscriber topic_numbers_sub = n.subscribe("topic_numbers", 100, topic_numbersCallback);
 
-  ros::Subscriber topic_numbers_sub = n.subscribe("topic_squares", 100, topic_squaresCallback);
+  ros::Subscriber topic_squares_sub = n.subscribe("topic_squares", 100, topic_squaresCallback);
 
  
   ros::spin();
