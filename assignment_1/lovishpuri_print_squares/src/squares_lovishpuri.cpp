@@ -20,7 +20,7 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
 
   ros::Subscriber topic_numbers_sub = n.subscribe("topic_numbers", 100, topic_numbersCallback);
-  topic_squares_pub = n.advertise<std_msgs::Int64>("topics_squares", 100);
+  topic_squares_pub = n.advertise<std_msgs::Int64>("topic_squares", 100);
 
  
   ros::spin();
