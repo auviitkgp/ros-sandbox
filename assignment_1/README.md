@@ -1,7 +1,7 @@
 # Assignment 1
 ## Problem statement:
 
-Create a catkin package `<github-username>_print_squares` which contains three nodes `numbers`, `squares`, `print`.
+Create a `catkin` (or `rosbuild`) package `<github-username>_print_squares` which contains three nodes `numbers`, `squares`, `print`.
 - `numbers` - This node will publish integers (starting from 1) to a ROS topic named `topic_numbers` at the rate of 1 Hz.
 - `squares` - This node will subscribe to `topic_numbers` and print the squares of the published numbers to another topic, `topic_squares`.
 - `print` - This node will subscribe to both `topic_numbers` and `topic_squares` and output them using ROS_INFO. The output will indicate the name of the topic that the output has come from. 
