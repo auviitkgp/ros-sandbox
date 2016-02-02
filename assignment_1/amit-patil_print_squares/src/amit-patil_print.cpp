@@ -4,12 +4,12 @@ includes all the necessary libraries required for common use.
 #include "ros/ros.h"
 #include "std_msgs/Int32.h"
 
-void numbersCallback(const std_msgs::Int64::ConstPtr& message)
+void numbersCallback(const std_msgs::Int32::ConstPtr& message)
 {
   ROS_INFO("topic_numbers output: [%d]", message->data);
 }
 //output by topic_number
-void squaresCallback(const std_msgs::Int64::ConstPtr& message)
+void squaresCallback(const std_msgs::Int32::ConstPtr& message)
 {
   ROS_INFO("topic_squares output: [%d]", message->data);
 }
