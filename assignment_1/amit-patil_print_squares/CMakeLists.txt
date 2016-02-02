@@ -21,14 +21,14 @@ rosbuild_genmsg()
 #uncomment if you have defined services
 #rosbuild_gensrv()
 
-rosbuild_add_executable(amit-patil_print_squares src/amit-patil_numbers.cpp)
-target_link_libraries(amit-patil_numbers ${PROJECT_NAME})
+rosbuild_add_executable(amit-patil_print_squares src/amit-patil_numbers.cpp src/amit-patil_print.cpp src/amit-patil_squares.cpp)
+#target_link_libraries(amit-patil_numbers ${PROJECT_NAME})
 
-rosbuild_add_executable(amit-patil_print_squares src/amit-patil_squares.cpp)
-target_link_libraries(amit-patil_squares ${PROJECT_NAME})
+#rosbuild_add_executable(amit-patil_print_squares src/amit-patil_squares.cpp)
+#target_link_libraries(amit-patil_squares ${PROJECT_NAME})
 
-rosbuild_add_executable(amit-patil_print_squares src/amit-patil_print.cpp)
-target_link_libraries(amit-patil_print ${PROJECT_NAME})
+#rosbuild_add_executable(amit-patil_print_squares src/amit-patil_print.cpp)
+#target_link_libraries(amit-patil_print ${PROJECT_NAME})
 #common commands for building c++ executables and libraries
 #rosbuild_add_library(${PROJECT_NAME} src/amit-patil_numbers.cpp)
 #rosbuild_add_library(${PROJECT_NAME} src/amit-patil_squares.cpp)
