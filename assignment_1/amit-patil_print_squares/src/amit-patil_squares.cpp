@@ -10,13 +10,13 @@ class square
 public:
   square()
   {
-    pub = n.advertise<std_msgs::Int64>("/topic_squares", 1);//publishes square to topic 'topic_squares'    
-    sub = n.subscribe("/topic_numbers", 1, &Square_Publish::callback, this);//subscribes to 'topic_number'
+    pub = n.advertise<std_msgs::Int32>("/topic_squares", 1);//publishes square to topic 'topic_squares'    
+    sub = n.subscribe("/topic_numbers", 1, &square::callback, this);//subscribes to 'topic_number'
   }
 
-  void callback(const std_msgs::Int64::ConstPtr& input)
+  void callback(const std_msgs::Int32::ConstPtr& input)
   {
-    std_msgs::Int64 output;//output of type int64
+    std_msgs::Int32 output;//output of type int64
     output.data = input->data*input->data;//square the input
     pub.publish(output);
   }
