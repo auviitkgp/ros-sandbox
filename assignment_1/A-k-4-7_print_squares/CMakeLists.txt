@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(parthamishra1996_print_squares)
+project(A-k-4-7_print_squares)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -81,7 +81,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #INCLUDE_DIRS include
-LIBRARIES parthamishra1996_print_squares
+LIBRARIES A-k-4-7_print_squares
 CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -98,19 +98,19 @@ include_directories(
 )
 
 ## Declare a cpp library
-# add_library(parthamishra1996_print_squares
-#   src/${PROJECT_NAME}/parthamishra1996_print_squares.cpp
+# add_library(A-k-4-7_print_squares
+#   src/${PROJECT_NAME}/A-k-4-7_print_squares.cpp
 # )
 
 ## Declare a cpp executable
-# add_executable(parthamishra1996_print_squares_node src/parthamishra1996_print_squares_node.cpp)
+# add_executable(A-k-4-7_print_squares_node src/A-k-4-7_print_squares_node.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(parthamishra1996_print_squares_node parthamishra1996_print_squares_generate_messages_cpp)
+# add_dependencies(A-k-4-7_print_squares_node A-k-4-7_print_squares_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(parthamishra1996_print_squares_node
+# target_link_libraries(A-k-4-7_print_squares_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -129,7 +129,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS parthamishra1996_print_squares parthamishra1996_print_squares_node
+# install(TARGETS A-k-4-7_print_squares A-k-4-7_print_squares_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -154,7 +154,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_parthamishra1996_print_squares.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_A-k-4-7_print_squares.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
@@ -163,14 +163,14 @@ include_directories(
 # catkin_add_nosetests(test)
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(numbers_parthamishra1996 src/numbers_parthamishra1996.cpp)
-target_link_libraries(numbers_parthamishra1996 ${catkin_LIBRARIES})
-add_dependencies(numbers_parthamishra1996 parthamishra1996_print_squares_generate_messages_cpp)
+add_executable(numbers_A-k-4-7 src/numbers_A-k-4-7.cpp)
+target_link_libraries(numbers_A-k-4-7 ${catkin_LIBRARIES})
+add_dependencies(numbers_A-k-4-7 A-k-4-7_print_squares_generate_messages_cpp)
 
-add_executable(squares_parthamishra1996 src/squares_parthamishra1996.cpp)
-target_link_libraries(squares_parthamishra1996 ${catkin_LIBRARIES})
-add_dependencies(squares_parthamishra1996 parthamishra1996_print_squares_generate_messages_cpp)
+add_executable(squares_A-k-4-7 src/squares_A-k-4-7.cpp)
+target_link_libraries(squares_A-k-4-7 ${catkin_LIBRARIES})
+add_dependencies(squares_A-k-4-7 A-k-4-7_print_squares_generate_messages_cpp)
 
-add_executable(print_parthamishra1996 src/print_parthamishra1996.cpp)
-target_link_libraries(print_parthamishra1996 ${catkin_LIBRARIES})
-add_dependencies(print_parthamishra1996 squares parthamishra1996_print_squares_generate_messages_cpp)
+add_executable(print_A-k-4-7 src/print_A-k-4-7.cpp)
+target_link_libraries(print_A-k-4-7 ${catkin_LIBRARIES})
+add_dependencies(print_A-k-4-7 squares A-k-4-7_print_squares_generate_messages_cpp)
