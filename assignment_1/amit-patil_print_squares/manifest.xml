@@ -1,15 +1,16 @@
 <package>
-  <description brief="auv_assignment">
+  <description brief="amit_patil_print_squares">
 
-     auv_assignment
+     amit_patil_print_squares
 
   </description>
   <author>AMIT</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/auv_assignment</url>
+  <url>http://ros.org/wiki/amit_patil_print_squares</url>
   <depend package="roscpp"/>
   <depend package="std_msgs"/>
+
 
 </package>
 
