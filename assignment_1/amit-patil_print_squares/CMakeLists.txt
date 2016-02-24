@@ -17,11 +17,13 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 #uncomment if you have defined messages
-rosbuild_genmsg()
+#rosbuild_genmsg()
 #uncomment if you have defined services
 #rosbuild_gensrv()
 
-rosbuild_add_executable(amit-patil_print_squares src/amit-patil_numbers.cpp src/amit-patil_print.cpp src/amit-patil_squares.cpp)
+rosbuild_add_executable(amit-patil_print_squares src/amit-patil_numbers.cpp)
+rosbuild_add_executable(squares src/amit-patil_squares.cpp)
+rosbuild_add_executable(print src/amit-patil_print.cpp)
 #target_link_libraries(amit-patil_numbers ${PROJECT_NAME})
 
 #rosbuild_add_executable(amit-patil_print_squares src/amit-patil_squares.cpp)
