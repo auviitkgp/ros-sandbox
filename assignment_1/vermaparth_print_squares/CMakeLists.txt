@@ -189,14 +189,14 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(numbers src/numbers.cpp)
-target_link_libraries(numbers ${catkin_LIBRARIES})
-add_dependencies(numbers beginner_tutorials_generate_messages_cpp)
+add_executable(vermaparth_numbers src/vermaparth_numbers.cpp)
+target_link_libraries(vermaparth_numbers ${catkin_LIBRARIES})
+add_dependencies(vermaparth_numbers beginner_tutorials_generate_messages_cpp)
 
-add_executable(squares src/squares.cpp)
-target_link_libraries(squares ${catkin_LIBRARIES})
-add_dependencies(squares beginner_tutorials_generate_messages_cpp)
+add_executable(vermaparth_squares src/squares.cpp)
+target_link_libraries(vermaparth_squares ${catkin_LIBRARIES})
+add_dependencies(vermaparth_squares beginner_tutorials_generate_messages_cpp)
 
-add_executable(print src/print.cpp)
-target_link_libraries(print ${catkin_LIBRARIES})
-add_dependencies(print beginner_tutorials_generate_messages_cpp)
+add_executable(vermaparth_print src/print.cpp)
+target_link_libraries(vermaparth_print ${catkin_LIBRARIES})
+add_dependencies(vermaparth_print beginner_tutorials_generate_messages_cpp)
