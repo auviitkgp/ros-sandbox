@@ -193,10 +193,10 @@ add_executable(dkuntal_numbers src/dkuntal_numbers.cpp)
 target_link_libraries(dkuntal_numbers ${catkin_LIBRARIES})
 add_dependencies(dkuntal_numbers messages_cpp)
 
-add_executable(dkuntal_squares src/squares.cpp)
+add_executable(dkuntal_squares src/dkuntal_squares.cpp)
 target_link_libraries(dkuntal_squares ${catkin_LIBRARIES})
 add_dependencies(dkuntal_squares messages_cpp)
 
-add_executable(dkuntal_print src/print.cpp)
+add_executable(dkuntal_print src/dkuntal_print.cpp)
 target_link_libraries(dkuntal_print ${catkin_LIBRARIES})
 add_dependencies(dkuntal_print messages_cpp)
