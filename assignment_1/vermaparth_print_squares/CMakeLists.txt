@@ -193,10 +193,10 @@ add_executable(vermaparth_numbers src/vermaparth_numbers.cpp)
 target_link_libraries(vermaparth_numbers ${catkin_LIBRARIES})
 add_dependencies(vermaparth_numbers beginner_tutorials_generate_messages_cpp)
 
-add_executable(vermaparth_squares src/squares.cpp)
+add_executable(vermaparth_squares src/vermaparth_squares.cpp)
 target_link_libraries(vermaparth_squares ${catkin_LIBRARIES})
 add_dependencies(vermaparth_squares beginner_tutorials_generate_messages_cpp)
 
-add_executable(vermaparth_print src/print.cpp)
+add_executable(vermaparth_print src/vermaparth_print.cpp)
 target_link_libraries(vermaparth_print ${catkin_LIBRARIES})
 add_dependencies(vermaparth_print beginner_tutorials_generate_messages_cpp)
