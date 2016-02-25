@@ -189,14 +189,14 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(numbers src/numbers.cpp)
-target_link_libraries(numbers ${catkin_LIBRARIES})
-add_dependencies(numbers messages_cpp)
+add_executable(dkuntal_numbers src/dkuntal_numbers.cpp)
+target_link_libraries(dkuntal_numbers ${catkin_LIBRARIES})
+add_dependencies(dkuntal_numbers messages_cpp)
 
-add_executable(squares src/squares.cpp)
-target_link_libraries(squares ${catkin_LIBRARIES})
-add_dependencies(squares messages_cpp)
+add_executable(dkuntal_squares src/squares.cpp)
+target_link_libraries(dkuntal_squares ${catkin_LIBRARIES})
+add_dependencies(dkuntal_squares messages_cpp)
 
-add_executable(print src/print.cpp)
-target_link_libraries(print ${catkin_LIBRARIES})
-add_dependencies(print messages_cpp)
+add_executable(dkuntal_print src/print.cpp)
+target_link_libraries(dkuntal_print ${catkin_LIBRARIES})
+add_dependencies(dkuntal_print messages_cpp)
