@@ -27,9 +27,9 @@ rosbuild_gensrv()
 
 #rosbuild_add_boost_directories()
 #rosbuild_link_boost(${PROJECT_NAME} thread)
-rosbuild_add_executable(amitpatil_numbers src/amitpatil_numbers.cpp)
-rosbuild_add_executable(amitpatil_squares src/amitpatil_squares.cpp)
-rosbuild_add_executable(amitpatil_print src/amitpatil_print.cpp)
+rosbuild_add_executable(amit-patil_numbers src/amitpatil_numbers.cpp)
+rosbuild_add_executable(amit-patil_squares src/amitpatil_squares.cpp)
+rosbuild_add_executable(amit-patil_print src/amitpatil_print.cpp)
 
 
 
