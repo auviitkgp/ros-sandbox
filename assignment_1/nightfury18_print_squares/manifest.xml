@@ -1,16 +1,15 @@
 <package>
-  <description brief="nightfury18_print_squares">
+  <description brief="pkg1">
 
-     nightfury18_print_squares
+     pkg1
 
   </description>
   <author>loneWolf</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/nightfury18_print_squares</url>
-  <depend package="std_msgs"/>
+  <url>http://ros.org/wiki/pkg1</url>
   <depend package="roscpp"/>
-  <depend package="rospy"/>
+  <depend package="std_msgs"/>
 
 </package>
 
