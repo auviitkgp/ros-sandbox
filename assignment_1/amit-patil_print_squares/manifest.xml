@@ -1,0 +1,17 @@
+<package>
+  <description brief="amit_patil_print_squares">
+
+     amit_patil_print_squares
+
+  </description>
+  <author>AMIT</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/amit_patil_print_squares</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+
+
+</package>
+
+
