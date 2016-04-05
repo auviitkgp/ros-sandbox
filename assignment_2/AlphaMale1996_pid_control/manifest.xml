@@ -1,0 +1,14 @@
+<package>
+  <description brief="AlphaMale1996_pid_control">
+
+     AlphaMale1996_pid_control
+
+  </description>
+  <author>ShadowSeraph</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/AlphaMale1996_pid_control</url>
+
+</package>
+
+
