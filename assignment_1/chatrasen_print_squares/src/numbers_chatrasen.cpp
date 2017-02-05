@@ -15,7 +15,7 @@ using namespace std_msgs;
 int main(int argc, char **argv)
 {
  
- init(argc, argv, "numbers");
+ init(argc, argv, "numbers_chatrasen");
 
  NodeHandle n;
 
