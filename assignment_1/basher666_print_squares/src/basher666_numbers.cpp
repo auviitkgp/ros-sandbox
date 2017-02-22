@@ -1,9 +1,5 @@
 #include "ros/ros.h"
 #include "std_msgs/Int64.h"
-#include <sstream>
-#include <bits/stdc++.h>
-
-using namespace std;
 
 int main(int argc,char **argv)
 {

@@ -1,7 +1,5 @@
 #include "ros/ros.h"
 #include "std_msgs/Int64.h"
-#include <bits/stdc++.h>
-using namespace std;
 
 ros::Publisher sq_pub; //creating the publisher object globally for convenience
 void numberscallback(const std_msgs::Int64::ConstPtr& num)
@@ -27,7 +25,6 @@ int main(int argc,char **argv)
   ros::Rate loop_rate(1);
   sq_pub=n2.advertise<std_msgs::Int64>("topic_squares",1000);  //selecting topic_squares as the topic to publish
   ros::Subscriber square=n.subscribe("topic_numbers",1000,numberscallback); //selecting topic_numbers as the topic to subscribe
-  ROS_INFO("hahahaha \n");
   ros::spin();
   
   return 0;

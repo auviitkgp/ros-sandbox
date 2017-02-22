@@ -1,8 +1,5 @@
 #include "ros/ros.h"
 #include "std_msgs/Int64.h"
-#include <bits/stdc++.h>
-
-using namespace std;
 
 void sqcallback(const std_msgs::Int64::ConstPtr& sqr)  //callback function for topic_squares
 {
