@@ -202,9 +202,9 @@ add_executable(number src/kumarrishabh_numbers.cpp)
 target_link_libraries(number ${catkin_LIBRARIES})
 add_dependencies(number kumarrishabh_print_squares_generate_messages_cpp)
 
-#add_executable(square src/kumarrishabh-squares.cpp)
-#target_link_libraries(square ${catkin_LIBRARIES})
-#add_dependencies(square kumarrishabh_print_squares_generate_messages_cpp)
+add_executable(square src/kumarrishabh-squares.cpp)
+target_link_libraries(square ${catkin_LIBRARIES})
+add_dependencies(square kumarrishabh_print_squares_generate_messages_cpp)
 
 add_executable(print src/kumarrishabh_print.cpp)
 target_link_libraries(print ${catkin_LIBRARIES})
